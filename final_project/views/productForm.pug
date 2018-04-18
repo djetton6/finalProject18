@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  h1.mt-5= title
+  form(method="POST")
+    .form-group
+      label(for='name') Name
+      input#name.form-control(type='text', placeholder='Enter name', name="name", value=product.name)
+    .form-group
+      label(for='quantity') Quantity
+      input#quantity.form-control(type='text', placeholder='Enter quantity', name="quantity", value=product.quantity)
+    .form-group
+      label(for='type') Type
+      input#type.form-control(type='text', placeholder='Enter type', name="type", value=product.type)
+    .form-group
+      label(for='price') Price
+      input#price.form-control(type='text', placeholder='Enter price', name="price", value=product.price)
+    button.btn.btn-primary(type='submit') Submit

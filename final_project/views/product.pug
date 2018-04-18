@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+  h1.mt-5 #{product.name} 
+    a.btn.btn-primary(href='./' + product.id + '/update') Edit
+  p Quantity: #{product.quantity}
+  p Type: #{product.type}
+  p Price: #{product.price}
